@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Prompt', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-prompt: 'Prompt', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-chakra: 'Chakra Petch', system-ui, sans-serif;
+  --font-orbitron: 'Orbitron', system-ui, sans-serif;
+  --font-rajdhani: 'Rajdhani', system-ui, sans-serif;
+}
+
+@layer base {
+  *, ::before, ::after {
+    font-family: 'Prompt', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  :root {
+    font-family: 'Prompt', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color-scheme: dark;
+    --bg-page: #09090b;
+    --text-primary: #f4f4f5;
+    --text-secondary: #a1a1aa;
+    --card-bg: #121215;
+    --card-border: #27272a;
+  }
+
+  html.light {
+    color-scheme: light;
+    --bg-page: #f8fafc;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --card-bg: #ffffff;
+    --card-border: #e2e8f0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: 'Prompt', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    min-height: 100dvh;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+.font-prompt {
+  font-family: 'Prompt', system-ui, sans-serif;
+}
+
+.font-chakra {
+  font-family: 'Chakra Petch', system-ui, sans-serif;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', system-ui, sans-serif;
+}
+
+.font-rajdhani {
+  font-family: 'Rajdhani', system-ui, sans-serif;
+}
+
+/* Minimalist Elevation & Borders */
+.bw-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
+.bw-card-hover {
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.bw-card-hover:hover {
+  border-color: #52525b;
+  background-color: #18181b;
+}
+
+html.light .bw-card-hover:hover {
+  border-color: #94a3b8;
+  background-color: #f1f5f9;
+}
+
+/* Light Theme Overrides */
+html.light .bg-\[\#09090b\],
+html.light .bg-\[\#09090b\]\/95,
+html.light .bg-\[\#0d131f\],
+html.light .bg-\[\#070b14\],
+html.light .bg-\[\#0b101b\],
+html.light .bg-\[\#090e18\] {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-\[\#121215\] {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-zinc-950,
+html.light .bg-slate-950 {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-zinc-900,
+html.light .bg-slate-900 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-zinc-900\/90,
+html.light .bg-zinc-900\/80,
+html.light .bg-zinc-900\/50,
+html.light .bg-slate-900\/90,
+html.light .bg-slate-900\/80 {
+  background-color: rgba(241, 245, 249, 0.95) !important;
+}
+
+html.light .bg-zinc-800,
+html.light .bg-slate-800 {
+  background-color: #e2e8f0 !important;
+}
+
+html.light .bg-zinc-800\/50,
+html.light .bg-slate-800\/50 {
+  background-color: rgba(226, 232, 240, 0.5) !important;
+}
+
+html.light .border-zinc-800,
+html.light .border-slate-800,
+html.light .border-slate-800\/80 {
+  border-color: #e2e8f0 !important;
+}
+
+html.light .border-zinc-700,
+html.light .border-slate-700,
+html.light .border-slate-700\/80 {
+  border-color: #cbd5e1 !important;
+}
+
+html.light .border-zinc-600,
+html.light .border-slate-600 {
+  border-color: #94a3b8 !important;
+}
+
+html.light header {
+  border-bottom-color: #e2e8f0 !important;
+}
+
+/* Typography in light mode */
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+html.light .text-zinc-100,
+html.light .text-zinc-200,
+html.light .text-slate-100,
+html.light .text-slate-200 {
+  color: #1e293b !important;
+}
+
+html.light .text-zinc-300,
+html.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-zinc-400,
+html.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.light .text-zinc-500,
+html.light .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Invert solid white buttons in light mode to black with white text */
+html.light .bg-white:not(.keep-light) {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+}
+
+html.light .bg-white:not(.keep-light) * {
+  color: #ffffff !important;
+}
+
+html.light .bg-black {
+  background-color: #0f172a !important;
+}
+
+/* Modals & Dialogs */
+html.light .fixed.inset-0.bg-black\/80,
+html.light .fixed.inset-0.bg-black\/70 {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+}
+
+/* Custom scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth mobile touch scrolling */
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
+}

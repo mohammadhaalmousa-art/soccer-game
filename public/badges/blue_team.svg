@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 560" width="100%" height="100%">
+  <defs>
+    <!-- Path for top curved text: BLUE TEAM -->
+    <path id="blueTopTextPath" d="M 95,305 A 165,165 0 0,1 405,305" fill="none" />
+    <!-- Path for bottom curved text: SPORTING CLUB -->
+    <path id="blueBottomTextPath" d="M 415,305 A 175,175 0 0,1 85,305" fill="none" />
+  </defs>
+
+  <!-- Top Star -->
+  <g id="topStar">
+    <polygon points="250,50 262,86 300,86 270,108 281,144 250,122 219,144 230,108 200,86 238,86" fill="#F4F4F5" />
+  </g>
+
+  <!-- Main Circular Crest -->
+  <g transform="translate(0, 0)">
+    <!-- Outer Cyan Base -->
+    <circle cx="250" cy="310" r="200" fill="#00A3C4" />
+    
+    <!-- Double White Outer Ring -->
+    <circle cx="250" cy="310" r="192" fill="none" stroke="#FFFFFF" stroke-width="5" />
+    <circle cx="250" cy="310" r="184" fill="none" stroke="#FFFFFF" stroke-width="2" />
+    
+    <!-- Inner Cyan Zone Ring -->
+    <circle cx="250" cy="310" r="132" fill="none" stroke="#FFFFFF" stroke-width="5" />
+
+    <!-- Upper Text: BLUE TEAM -->
+    <text font-family="'Chakra Petch', 'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="34" fill="#FFFFFF" letter-spacing="8">
+      <textPath href="#blueTopTextPath" startOffset="50%" text-anchor="middle">
+        BLUE TEAM
+      </textPath>
+    </text>
+
+    <!-- Side Fleur-de-lis -->
+    <!-- Left Fleur-de-lis -->
+    <g transform="translate(88, 305) scale(0.65)">
+      <path d="M 0,-25 C 5,-15 12,-10 12,0 C 12,10 5,15 0,20 C -5,15 -12,10 -12,0 C -12,-10 -5,-15 0,-25 Z" fill="none" stroke="#FFFFFF" stroke-width="3" />
+      <path d="M -2,2 C -15,-8 -25,0 -20,15 C -15,18 -8,12 -2,8 Z" fill="none" stroke="#FFFFFF" stroke-width="3" />
+      <path d="M 2,2 C 15,-8 25,0 20,15 C 15,18 8,12 2,8 Z" fill="none" stroke="#FFFFFF" stroke-width="3" />
+      <rect x="-14" y="6" width="28" height="4" rx="2" fill="#FFFFFF" />
+      <path d="M -8,10 L 0,22 L 8,10 Z" fill="#FFFFFF" />
+    </g>
+
+    <!-- Right Fleur-de-lis -->
+    <g transform="translate(412, 305) scale(0.65)">
+      <path d="M 0,-25 C 5,-15 12,-10 12,0 C 12,10 5,15 0,20 C -5,15 -12,10 -12,0 C -12,-10 -5,-15 0,-25 Z" fill="none" stroke="#FFFFFF" stroke-width="3" />
+      <path d="M -2,2 C -15,-8 -25,0 -20,15 C -15,18 -8,12 -2,8 Z" fill="none" stroke="#FFFFFF" stroke-width="3" />
+      <path d="M 2,2 C 15,-8 25,0 20,15 C 15,18 8,12 2,8 Z" fill="none" stroke="#FFFFFF" stroke-width="3" />
+      <rect x="-14" y="6" width="28" height="4" rx="2" fill="#FFFFFF" />
+      <path d="M -8,10 L 0,22 L 8,10 Z" fill="#FFFFFF" />
+    </g>
+
+    <!-- Lower Text: SPORTING CLUB -->
+    <text font-family="'Chakra Petch', 'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" letter-spacing="8">
+      <textPath href="#blueBottomTextPath" startOffset="50%" text-anchor="middle">
+        SPORTING CLUB
+      </textPath>
+    </text>
+
+    <!-- Center Classic Wireframe Soccer Ball on Cyan Background -->
+    <g transform="translate(250, 310)">
+      <!-- Ball Outer Circle -->
+      <circle cx="0" cy="0" r="102" fill="#00A3C4" stroke="#FFFFFF" stroke-width="5.5" />
+      <circle cx="0" cy="0" r="96" fill="#00A3C4" stroke="#FFFFFF" stroke-width="2" />
+
+      <!-- Center Pentagon -->
+      <!-- Center polygon -->
+      <polygon points="0,-28 27,-9 17,23 -17,23 -27,-9" fill="none" stroke="#FFFFFF" stroke-width="4.5" />
+
+      <!-- Radial Lines to Outer Hexagons -->
+      <line x1="0" y1="-28" x2="0" y2="-62" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="27" y1="-9" x2="60" y2="-19" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="17" y1="23" x2="38" y2="58" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="-17" y1="23" x2="-38" y2="58" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="-27" y1="-9" x2="-60" y2="-19" stroke="#FFFFFF" stroke-width="4.5" />
+
+      <!-- Hexagonal Perimeter Seams -->
+      <!-- Top edge connections -->
+      <line x1="0" y1="-62" x2="-38" y2="-78" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="0" y1="-62" x2="38" y2="-78" stroke="#FFFFFF" stroke-width="4.5" />
+
+      <!-- Top-right connections -->
+      <line x1="38" y1="-78" x2="78" y2="-52" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="60" y1="-19" x2="78" y2="-52" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="60" y1="-19" x2="82" y2="18" stroke="#FFFFFF" stroke-width="4.5" />
+
+      <!-- Top-left connections -->
+      <line x1="-38" y1="-78" x2="-78" y2="-52" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="-60" y1="-19" x2="-78" y2="-52" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="-60" y1="-19" x2="-82" y2="18" stroke="#FFFFFF" stroke-width="4.5" />
+
+      <!-- Bottom-right connections -->
+      <line x1="82" y1="18" x2="65" y2="65" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="38" y1="58" x2="65" y2="65" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="38" y1="58" x2="0" y2="82" stroke="#FFFFFF" stroke-width="4.5" />
+
+      <!-- Bottom-left connections -->
+      <line x1="-82" y1="18" x2="-65" y2="65" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="-38" y1="58" x2="-65" y2="65" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="-38" y1="58" x2="0" y2="82" stroke="#FFFFFF" stroke-width="4.5" />
+
+      <!-- Outer anchor lines to ball edge -->
+      <line x1="0" y1="82" x2="0" y2="96" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="-38" y1="-78" x2="-45" y2="-88" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="38" y1="-78" x2="45" y2="-88" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="78" y1="-52" x2="88" y2="-45" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="-78" y1="-52" x2="-88" y2="-45" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="82" y1="18" x2="95" y2="18" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="-82" y1="18" x2="-95" y2="18" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="65" y1="65" x2="72" y2="72" stroke="#FFFFFF" stroke-width="4.5" />
+      <line x1="-65" y1="65" x2="-72" y2="72" stroke="#FFFFFF" stroke-width="4.5" />
+    </g>
+  </g>
+</svg>
